@@ -19,7 +19,7 @@ def offre(duree):
         off2 = 0
         off3 = 0
         off4 = duree * 2
-    list = [off1, off2, off3, off4]
+    list = [200,100+off1, 50+off2, 20+off3, off4]
     return list
 d=0
 while True:
@@ -33,11 +33,11 @@ while True:
         d = int(input("donner la durre de communication en min  en mois: "))
     elif choix == '2':
         offre(d)
-        print("le cout mensuelle pour l offre de 200 dh est : 0dh")
-        print("le cout mensuelle pour l offre de 100 dh est :","le prix par moi",offre(d)[0],"dh")
-        print("le cout mensuelle pour l offre de 50 dh est :","le prix par moi", offre(d)[1],"dh")
-        print("le cout mensuelle pour l offre de 20 dh est :","le prix par moi", offre(d)[2],"dh")
-        print("le cout mensuelle pour l offre de 0 dh est :","le prix par moi",  offre(d)[3],"dh")
+        print("le cout mensuelle pour l offre de 200 dh est :",offre(d)[0],"dh ")
+        print("le cout mensuelle pour l offre de 100 dh est :","le prix  totale par moi",offre(d)[1],"dh ")
+        print("le cout mensuelle pour l offre de 50 dh est :","le prix par moi", offre(d)[2],"dh")
+        print("le cout mensuelle pour l offre de 20 dh est :","le prix par moi", offre(d)[3],"dh ")
+        print("le cout mensuelle pour l offre de 0 dh est :","le prix par moi",  offre(d)[4],"dh")
     elif choix == '3':
         m=min(offre(d))
         indice = offre(d).index(m)
